@@ -6,7 +6,7 @@ const Layout: React.FC = ({ children }) => {
   return (
     <div>
       <Nav />
-      <main className="relative">{children}</main>
+      <main className="relative bg-botti">{children}</main>
       <Footer />
     </div>
   )

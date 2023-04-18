@@ -8,6 +8,7 @@ import clsx from "clsx"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
+import Image from "next/image"
 
 const Nav = () => {
   const { pathname } = useRouter()
@@ -47,7 +48,7 @@ const Nav = () => {
     >
       <header
         className={clsx(
-          "relative h-16 px-8 mx-auto transition-colors bg-transparent border-b border-transparent duration-200 group-hover:bg-white group-hover:border-gray-200",
+          "relative h-24 px-8 mx-auto transition-colors bg-transparent border-b border-transparent duration-200 group-hover:bg-white group-hover:border-gray-200",
           {
             "!bg-white !border-gray-200": !isHome || isScrolled,
           }
@@ -66,19 +67,32 @@ const Nav = () => {
               <Hamburger setOpen={toggle} />
             </div>
             <div className="hidden small:block h-full">
-              <DropdownMenu />
+              {/* <DropdownMenu /> */}
             </div>
           </div>
 
           <div className="flex items-center h-full">
             <Link href="/">
-              <a className="text-xl-semi uppercase">Acme</a>
+              <a>
+                <Image
+                  src="/images/logo3.png"
+                  alt="logo"
+                  width={125}
+                  height={125}
+                />
+              </a>
             </Link>
+            {/* <Link href="/">
+              <a className="text-xl-semi uppercase">Acme</a>
+            </Link> */}
           </div>
 
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
             <div className="hidden small:flex items-center gap-x-6 h-full">
               {process.env.FEATURE_SEARCH_ENABLED && <DesktopSearchModal />}
+              <Link href="/store">
+                <a>Store</a>
+              </Link>
               <Link href="/account">
                 <a>Account</a>
               </Link>
