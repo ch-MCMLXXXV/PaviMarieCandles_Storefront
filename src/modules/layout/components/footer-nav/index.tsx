@@ -13,7 +13,7 @@ const FooterNav = () => {
         <div>
           <Image src="/images/logo3.png" alt="logo" width={150} height={150} />
           {/* <Link href="/">
-            <a className="text-xl-semi uppercase">Pavi Marie</a>
+            <a className="text-xl-semi uppercase">Acme</a>
           </Link> */}
         </div>
         <div className="text-small-regular grid grid-cols-2 gap-x-16">
