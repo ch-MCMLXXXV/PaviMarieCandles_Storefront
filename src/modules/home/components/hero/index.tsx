@@ -9,7 +9,7 @@ const Hero = () => {
           Beautiful, Scented Soy Candles
         </h1>
         <p className="text-base-regular max-w-[32rem] mb-6 drop-shadow-md shadow-black">
-          Leap into spring with out lovely scents!
+          Leap into spring with our lovely scents!
         </p>
         <UnderlineLink href="/store">Explore products</UnderlineLink>
       </div>
