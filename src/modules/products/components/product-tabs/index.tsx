@@ -27,7 +27,7 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
   return (
     <div>
       <Tab.Group>
-        <Tab.List className="border-b border-gray-200 box-border grid grid-cols-2">
+        <Tab.List className="box-border grid grid-cols-2 border-b border-gray-200">
           {tabs.map((tab, i) => {
             return (
               <Tab
@@ -58,7 +58,7 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
 
 const ProductInfoTab = ({ product }: ProductTabsProps) => {
   return (
-    <Tab.Panel className="text-small-regular py-8">
+    <Tab.Panel className="py-8 text-small-regular">
       <div className="grid grid-cols-2 gap-x-8">
         <div className="flex flex-col gap-y-4">
           <div>
@@ -100,7 +100,7 @@ const ProductInfoTab = ({ product }: ProductTabsProps) => {
 
 const ShippingInfoTab = () => {
   return (
-    <Tab.Panel className="text-small-regular py-8">
+    <Tab.Panel className="py-8 text-small-regular">
       <div className="grid grid-cols-1 gap-y-8">
         <div className="flex items-start gap-x-2">
           <FastDelivery />
@@ -114,22 +114,28 @@ const ShippingInfoTab = () => {
         </div>
         <div className="flex items-start gap-x-2">
           <Refresh />
-          <div>
+          {/* <div>
             <span className="font-semibold">Simple exchanges</span>
             <p className="max-w-sm">
               Is the fit not quite right? No worries - we&apos;ll exchange your
               product for a new one.
             </p>
-          </div>
+          </div> */}
         </div>
         <div className="flex items-start gap-x-2">
           <Back />
           <div>
-            <span className="font-semibold">Easy returns</span>
+            <span className="font-semibold">Refund Policy</span>
             <p className="max-w-sm">
-              Just return your product and we&apos;ll refund your money. No
-              questions asked – we&apos;ll do our best to make sure your return
-              is hassle-free.
+              Due to the handmade nature of the products, and for safety and
+              hygiene reasons, this merchandise cannot be restocked or resold.
+              Therefore, returns are not accepted. However, your satisfaction is
+              the priority. Please inspect your order upon reception and contact
+              us immediately if the item is defective, damaged, or if you
+              received the incorrect item. Do keep in mind that all items are
+              handmade, and imperfections are natural. We truly believe you will
+              love our products, but if you are unhappy, feel free to reach out.
+              We will work with you to remedy the situation.
             </p>
           </div>
         </div>
