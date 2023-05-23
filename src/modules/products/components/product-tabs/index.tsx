@@ -112,16 +112,16 @@ const ShippingInfoTab = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-start gap-x-2">
+        {/* <div className="flex items-start gap-x-2">
           <Refresh />
-          {/* <div>
+          <div>
             <span className="font-semibold">Simple exchanges</span>
             <p className="max-w-sm">
               Is the fit not quite right? No worries - we&apos;ll exchange your
               product for a new one.
             </p>
-          </div> */}
-        </div>
+          </div>
+        </div> */}
         <div className="flex items-start gap-x-2">
           <Back />
           <div>
