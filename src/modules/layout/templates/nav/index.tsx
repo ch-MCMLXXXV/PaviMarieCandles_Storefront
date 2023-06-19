@@ -83,7 +83,7 @@ const Nav = () => {
               </a>
             </Link>
             {/* <Link href="/">
-              <a className="text-xl-semi uppercase">Acme</a>
+              <a className="text-xl-semi uppercase">PAVI MARIE</a>
             </Link> */}
           </div>
 
